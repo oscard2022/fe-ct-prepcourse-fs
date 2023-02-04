@@ -171,7 +171,7 @@ function esPrimo(num){
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if (num <= 0 || num ==1) return false;
+   if (num <= 1 ) return false;
          
    for (i = 2; i < num; i++) {
       if (num % i ===0)
@@ -192,6 +192,7 @@ function esVerdadero(valor) {
    }
 }
 // no era necesario enumerar todos los casos de verdadero o falso, al yo darle el booleano true, este toma todos los valores verdaderos o falsos
+// if (valor) tambien deberia tomarlo, ya que esto es llamado truty value
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
@@ -209,14 +210,14 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   var x = 0
+   var veces = 0
    do {
       num += 5
-      x += 1
+      veces += 1
    } while (x <8);
    return num
 }
-
+// haga  tantas cosas(do) mientras se cumpla una condicion(while)
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    obtenerMayor,
