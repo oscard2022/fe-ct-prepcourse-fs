@@ -87,6 +87,11 @@ function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
+   function comparar(a, b){return a - b;}
+   arrayOfNums.sort (comparar);
+   grande = (arrayOfNums.length - 1)
+   
+   return arrayOfNums[grande];
 }
 
 function multiplicarArgumentos() {
@@ -94,11 +99,19 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
+  
 }
 
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
+   var mayor = [];
+   for (let i = 0; i < array.length; i++ ){
+      if (array[i] > 18){
+         mayor.push(array[i]);
+      }
+   }
+   return (mayor.length);
 }
 
 function diaDeLaSemana(numeroDeDia) {
@@ -106,12 +119,22 @@ function diaDeLaSemana(numeroDeDia) {
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
+   sabado = 7;
+   domingo = 1;
+   if (numeroDeDia === 7 || numeroDeDia === 1){
+      return "Es fin de semana";
+   }
+   else {
+      return "Es dia laboral"
+   }
+   
 }
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
    // Tu código:
+   
 }
 
 function todosIguales(array) {
