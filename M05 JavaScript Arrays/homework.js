@@ -208,13 +208,13 @@ function mesesDelAño(array) {
    // Tu código:
    let nuevoarray= []
    for (let i = 0; i < array.length; i++){
-      if (array[i] === 'enero'){
+      if (array[i] === 'Enero'){
          nuevoarray.push(array[i]);
       }
-      else if (array[i] === 'noviembre'){
+      else if (array[i] === 'Noviembre'){
          nuevoarray.push(array[i]);
       }
-      else if (array[i] === 'marzo'){
+      else if (array[i] === 'Marzo'){
          nuevoarray.push(array[i]);
       }
    }
@@ -222,7 +222,6 @@ function mesesDelAño(array) {
       return "No se encontraron los meses pedidos"
    }
    return nuevoarray
-
 }
 
 function tablaDelSeis() {
@@ -240,6 +239,13 @@ function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   var mayorA = [];
+   for (let i = 0; i < array.length; i++ ){
+      if (array[i] > 100){
+         mayorA.push(array[i]);
+      }
+   }
+   return mayorA
 }
 
 /* ----------------------------------------------------------------------------------
@@ -253,6 +259,19 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   let nuevoarray = [];
+   for (let i = 0; i < 10; i++){
+      num += 2;
+      if (num === i){
+         break
+      } else nuevoarray.push(num);
+   }
+   if (nuevoarray.length < 10){
+      return "Se interrumpió la ejecución"
+   }
+   else {
+      return nuevoarray
+   }
 }
 
 function continueStatement(num) {
@@ -262,6 +281,16 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   let array = [];
+   for (let i = 0; i < 10; i++){
+      if (i === 5){
+         continue;
+      } else {
+         num += 2;
+         array.push(num)
+      };
+   }
+   return array
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
