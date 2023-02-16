@@ -199,6 +199,9 @@ function todosIguales(array) {
      acum = array[i]
    }
    return true;
+   
+   // var comprobarelementos = array.every((num) => {return === array[0]});
+   // return comprobarelementos;
  }
 
 function mesesDelAño(array) {
@@ -283,7 +286,7 @@ function continueStatement(num) {
    // Tu código:
    let array = [];
    for (let i = 0; i < 10; i++){
-      if (i === 5){
+      if (i === 4){
          continue;
       } else {
          num += 2;
