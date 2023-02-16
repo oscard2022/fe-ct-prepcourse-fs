@@ -169,11 +169,13 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // objetoUsuario: { post:[{like1: 20}, {like2: 30}, {like2: 40}]}
    
    var contador = 0
-
-   objetoUsuario.posts.forEach(posts=> {
-      contador = contador + posts.likes
+   for (const posts of objetoUsuario.posts) {
+      contador = contador + posts.likes;
       
-   });
+   }
+   //objetoUsuario.posts.forEach(posts=> {
+   //   contador = contador + posts.likes
+   //});
    return contador
 }
 
